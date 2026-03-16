@@ -1,4 +1,4 @@
-export default function History(history, setSearch){
+export default function History({ history, setSearch }){
 
     const handleChange = (e)=>{
         setSearch(e.target.value)
