@@ -7,5 +7,5 @@ export default function History({ history, setSearch }){
         <select onChange={handleChange}> 
             {history?.map((item, i) => <option key={i} value={item}>{item}</option>)}
         </select>
-    )
+    ),
 }

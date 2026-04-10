@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export default function MovieCard({ movie }) {
     return (
@@ -6,8 +6,8 @@ export default function MovieCard({ movie }) {
             <article className="movie-card">
                 <figure>
                     <img 
-                    src={movie.Poster !== "N/A" ? movie.Poster : "https://via.placeholder.com/300x450?text=Ingen+Bilde"} 
-                    alt={`Film plakat kommer snart ${movie.Title}`}
+                        src={movie.Poster !== "N/A" ? movie.Poster : "https://via.placeholder.com/300x450?text=Ingen+Bilde"} 
+                        alt={`Plakat for filmen ${movie.Title}`} 
                     />
                 </figure>
                 <header>
@@ -19,5 +19,5 @@ export default function MovieCard({ movie }) {
                 </nav>
             </article>
         </li>
-    )
+    );
 }
